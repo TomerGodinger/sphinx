@@ -1,13 +1,17 @@
-def get_random_ingredients(kind=None):
+from typing import Union, List
+
+def get_random_ingredients(kind: Union[List[str], None]=None) -> List[str]:
     """
     Return a list of random ingredients as strings.
 
-    :param kind: Optional "kind" of ingredients.
-    :type kind: list[str] or None
-    :raise lumache.InvalidKindError: If the kind is invalid.
-    :return: The ingredients list.
-    :rtype: list[str]
-
+    Args:
+        kind: Optional "kind" of ingredients.
+    
+    Returns:
+        The ingredients list.
+    
+    Raises:
+        lumache.InvalidKindError: If the kind is invalid.
     """
     return ["shells", "gorgonzola", "parsley"]
 
