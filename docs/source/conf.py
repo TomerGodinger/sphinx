@@ -17,9 +17,9 @@ sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 
 # -- Project information -----------------------------------------------------
 
-project = 'Lumache'
-copyright = '2022, Graziella'
-author = 'Graziella'
+project = 'LuCLI'
+copyright = '2022, Nomnom Inc.'
+author = 'Sanji'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'
@@ -38,6 +38,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx_click',
     'sphinx_autodoc_typehints',
+    'sphinxcontrib.restbuilder',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

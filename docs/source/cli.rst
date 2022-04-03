@@ -1,6 +1,11 @@
-LUCLI
-=====
+Lunch CLI
+=========
 
 .. click:: lucli:cli
    :prog: lucli
-   :show-nested:
+   :nested: short
+
+.. toctree::
+
+   cli-main
+   cli-starter

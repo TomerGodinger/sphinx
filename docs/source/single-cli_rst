@@ -1,0 +1,28 @@
+LUCLI (Single)
+==============
+
+Take special note of the :command:`main` command of the :program:`lucli` group.
+
+.. click:: lucli:cli
+   :prog: lucli
+   :nested: full
+
+TEST
+----
+
+.. click:: cli.commands.main:main_group
+   :prog: lucli
+   :nested: short
+
+
+END
+---
+
+:program:`lucli / cli`
+
+.. :option:`dish`
+
+:command:`main`
+
+:envvar:`DISH`
+
