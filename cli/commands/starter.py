@@ -6,7 +6,8 @@ def starter_group():
     pass
 
 
-@starter_group.command()
+@starter_group.command(name='order-bread',
+                       short_help='Order doughy goodness.')
 @click.option('--yes', 'auto_confirm', is_flag=True, help='No? No, no no. Yes.')
 def order_bread(auto_confirm: str):
     """Orders a bread dish."""
@@ -14,7 +15,8 @@ def order_bread(auto_confirm: str):
         click.echo(f'Some bread here please!')
 
 
-@starter_group.command()
+@starter_group.command(name='order-soup',
+                       short_help='Order some hot, hot soup.')
 @click.option('--sassiness-level', type=int, help='How rude you wish to be. Can be dangerous.')
 def order_soup(sassiness_level: int, quantity: int):
     """

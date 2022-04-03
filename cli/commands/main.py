@@ -7,15 +7,15 @@ def main_group():
 
 
 @main_group.command()
-@click.option('-dish', metavar='thing', envvar='DISH', default='burger',
+@click.option('-dish', metavar='<name>', envvar='DISH', default='burger',
                 show_default=True, help='The meat dish to order')
-def order_meat(dish: str):
+def order_meat(when: str, dish: str):
     """Orders a meat dish."""
     click.echo(f'Meat is neat! One {dish} please!')
 
 
 @main_group.command()
-@click.option('-dish', metavar='<thang>', envvar='DISH', default='penne',
+@click.option('-dish', metavar='<name>', envvar='DISH', default='penne',
               show_default=True, help='The type of pastas to order')
 @click.option('-quantity', metavar='<quantity>', default=5,
               show_default=True, help='The amount of pasta dishes to order')
