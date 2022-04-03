@@ -22,11 +22,9 @@ def order_soup(sassiness_level: int, quantity: int):
     """
     Orders a serving of soup. Be polite or you might get banned.
     
-    Soup goes great with `meat <cli-main.html#main-order-meat>`_, you know.
+    Soup goes great with `meat <cli-main.html#main-order-meat>`_, you know (just be sure to specify a good :option:`dish <main-order-meat -dish>`).
 
     Not so sure about `pastas <cli-main.html#main-order-pastas>`_ though.
-
-    Be sure to specify a good :option:`dish <main-order-meat -dish>` though.
     """
     if sassiness_level > 5:
         click.echo('Soup Chef: "No soup for you! Come back, one year!"')
