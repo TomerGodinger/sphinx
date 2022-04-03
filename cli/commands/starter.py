@@ -7,7 +7,7 @@ def starter_group():
 
 
 @starter_group.command()
-@click.option('--yes', 'auto_confirm', is_flag=True)
+@click.option('--yes', 'auto_confirm', is_flag=True, help='No? No, no no. Yes.')
 def order_bread(auto_confirm: str):
     """Orders a bread dish."""
     if auto_confirm or click.confirm("Are you sure you'd like to order some bread?"):
@@ -30,3 +30,7 @@ def order_soup(sassiness_level: int, quantity: int):
         click.echo('Soup Chef: "No soup for you! Come back, one year!"')
     else:
         click.echo('One bowl of soup please.')
+
+def bla():
+    """Testing"""
+    pass

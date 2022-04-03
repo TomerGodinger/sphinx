@@ -61,3 +61,24 @@ html_theme = 'furo'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+
+
+# ----------------------------------------------------------------------------
+# -- Extra Documenter for Simple Docstrings ----------------------------------
+# -- Taken from: https://stackoverflow.com/questions/7825263/including-docstring-in-sphinx-documentation
+# ----------------------------------------------------------------------------
+from sphinx.ext import autodoc
+
+class SimpleDocumenter(autodoc.MethodDocumenter):
+    objtype = "simple"
+
+    #do not indent the content
+    content_indent = ""
+
+    #do not add a header to the docstring
+    def add_directive_header(self, sig):
+        pass
+
+def setup(app):
+    app.add_autodocumenter(SimpleDocumenter)
