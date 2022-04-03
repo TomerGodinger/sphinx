@@ -12,6 +12,7 @@
 #
 import pathlib
 import sys
+import os
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 
 
@@ -22,7 +23,9 @@ copyright = '2022, Nomnom Inc.'
 author = 'Sanji'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+# This is taken from the BUILD_VERSION environment variable, with the
+# constant value here used as default if the variable is missing
+release = os.getenv('BUILD_VERSION', '100.0.0')
 
 
 # -- General configuration ---------------------------------------------------
@@ -46,10 +49,23 @@ extensions = [
 templates_path = ['_templates']
 
 html_sidebars = {
-    '**': [
-        'versioning.html',
-    ],
+    "**": [
+        "sidebar/scroll-start.html",
+        "sidebar/brand.html",
+        "versioning.html",
+        "sidebar/search.html",
+        "sidebar/navigation.html",
+        "sidebar/ethical-ads.html",
+        "sidebar/scroll-end.html",
+    ]
 }
+
+# html_sidebars = {
+#     '**': [
+#         'localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html',
+#         # 'versioning.html',
+#     ],
+# }
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -68,6 +84,11 @@ html_theme = 'furo'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+
+
+# -- Options for versioning --------------------------------------------------
+smv_outputdir_format = 'versions/{ref.name}'
 
 
 
