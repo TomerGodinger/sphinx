@@ -56,7 +56,7 @@ html_sidebars = {
         "sidebar/search.html",
         "sidebar/navigation.html",
         "sidebar/ethical-ads.html",
-        "sidebar/scroll-end.html",
+        "sidebar/scroll-end.html"
     ]
 }
 
