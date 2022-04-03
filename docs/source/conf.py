@@ -12,7 +12,6 @@
 #
 import pathlib
 import sys
-import os
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 
 
@@ -25,7 +24,8 @@ author = 'Sanji'
 # The full version, including alpha/beta/rc tags
 # This is taken from the BUILD_VERSION environment variable, with the
 # constant value here used as default if the variable is missing
-release = os.getenv('BUILD_VERSION', '100.0.0')
+release = '100.0.0'
+release = pathlib.Path('BUILD_VERSION').read_text()
 
 
 # -- General configuration ---------------------------------------------------
