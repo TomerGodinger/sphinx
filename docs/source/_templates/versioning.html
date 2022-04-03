@@ -1,6 +1,5 @@
 {% if versions %}
-<select id="versionselect" onchange="window.open(this.value,'_self');">
-  <option value="#">Version Selection</option>
+<select id="versionselect" onchange="window.open(this.value,'_self');" style="width: 100%; padding: 5px;">
   {%- for item in versions %}
   {% if item == current_version %}
     <option value="{{ item.url }}" selected="selected">{{ item.name }}</option>

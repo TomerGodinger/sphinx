@@ -24,8 +24,8 @@ author = 'Sanji'
 # The full version, including alpha/beta/rc tags
 # This is taken from the BUILD_VERSION environment variable, with the
 # constant value here used as default if the variable is missing
-release = '100.0.0'
-release = pathlib.Path('BUILD_VERSION').read_text()
+release = 'main'
+# release = pathlib.Path('BUILD_VERSION').read_text()
 
 
 # -- General configuration ---------------------------------------------------

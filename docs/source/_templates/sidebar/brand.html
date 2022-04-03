@@ -1,4 +1,9 @@
-{% extends "!sidebar/brand.html" %}
+{% if versions %}
 {% block body %}
-BABABA
-{% endblock %}%
+<a class="sidebar-brand" href="index.html">
+    <span class="sidebar-brand-text">LuCLI {{ current_version.name }} documentation</span>
+</a>
+{% endblock %}
+{% else %}
+{% extends "!sidebar/brand.html" %}
+{% endif %}
