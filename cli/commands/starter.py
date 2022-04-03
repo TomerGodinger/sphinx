@@ -31,6 +31,16 @@ def order_soup(sassiness_level: int, quantity: int):
     else:
         click.echo('One bowl of soup please.')
 
-def bla():
-    """Testing"""
-    pass
+@starter_group.command(name='order-salad',
+                       short_help='Orders an intentionally unsorted array of vegetables.')
+def order_soup():
+    """
+    Orders an mix of vegetables.
+
+    Their order is random since it's a salad.
+    Therefore we've decided that the vegetables themselves shall be random too.
+
+    In other words, you don't get to pick anything here.
+    Take it or leave it.
+    """
+    click.echo('Waiter: You get a bowl full of lettuce. This was chosen randomly and fairly. If you keep trying over and over again, you may get something else. Someday.')
