@@ -88,8 +88,8 @@ html_static_path = ['_static']
 
 
 # -- Options for versioning --------------------------------------------------
+smv_branch_whitelist = r'^main$'
 smv_outputdir_format = '{ref.name}'
-
 
 
 # ----------------------------------------------------------------------------

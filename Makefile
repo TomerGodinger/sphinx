@@ -10,6 +10,8 @@ SOURCEDIR               = docs/source
 BUILDDIR                = docs/build-single
 BUILDDIR_VERSIONS       = docs/build
 
+GHPAGESBUILD            = html/
+
 # Put it first so that "make" without argument is like "make all".
 all: Makefile
 	make clean
@@ -19,18 +21,24 @@ all: Makefile
 	make versioned
 #	make markdown
 
-.PHONY: help Makefile clean clean-single clean-versions
+ghpages:
+	@$(SPHINXVERBUILD) "$(SOURCEDIR)" "$(GHPAGESBUILD)"
+
+.PHONY: help Makefile clean clean-single clean-versions clean-ghpages
 
 versioned:
 	@$(SPHINXVERBUILD) "$(SOURCEDIR)" "$(BUILDDIR_VERSIONS)" $(SPHINXOPTS) $(O)
 
-clean: clean-single clean-versions
+clean: clean-single clean-versions clean-ghpages
 
 clean-single:
 	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 clean-versions:
 	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR_VERSIONS)" $(SPHINXOPTS) $(O)
+
+clean-ghpages:
+	rm -rf "$(GHPAGESBUILD)"
 
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
