@@ -12,6 +12,7 @@ git switch gh-pages
 for dirname in html/*
 do
     vername=${dirname##*/}
+    rm -rf "$vername"
     mv "$dirname" "$vername"
     git add "$vername"
 done
