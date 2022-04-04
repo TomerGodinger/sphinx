@@ -3,11 +3,12 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
-SPHINXOPTS       ?=
-SPHINXBUILD      ?= sphinx-build
-SPHINXVERBUILD   ?= sphinx-multiversion
-SOURCEDIR        = docs/source
-BUILDDIR         = docs/build
+SPHINXOPTS              ?=
+SPHINXBUILD             ?= sphinx-build
+SPHINXVERBUILD          ?= sphinx-multiversion
+SOURCEDIR               = docs/source
+BUILDDIR                = docs/build-single
+BUILDDIR_VERSIONS       = docs/build
 
 # Put it first so that "make" without argument is like "make all".
 all: Makefile
@@ -18,10 +19,18 @@ all: Makefile
 	make versioned
 #	make markdown
 
-.PHONY: help Makefile both
+.PHONY: help Makefile clean clean-single clean-versions
 
 versioned:
-	@$(SPHINXVERBUILD) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@$(SPHINXVERBUILD) "$(SOURCEDIR)" "$(BUILDDIR_VERSIONS)" $(SPHINXOPTS) $(O)
+
+clean: clean-single clean-versions
+
+clean-single:
+	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+clean-versions:
+	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR_VERSIONS)" $(SPHINXOPTS) $(O)
 
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

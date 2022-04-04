@@ -88,7 +88,7 @@ html_static_path = ['_static']
 
 
 # -- Options for versioning --------------------------------------------------
-smv_outputdir_format = 'versions/{ref.name}'
+smv_outputdir_format = '{ref.name}'
 
 
 
