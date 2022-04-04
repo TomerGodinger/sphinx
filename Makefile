@@ -4,8 +4,8 @@
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 SPHINXOPTS              ?=
-SPHINXBUILD             ?= sphinx-build
-SPHINXVERBUILD          ?= sphinx-multiversion
+SPHINXBUILD             ?= BUILDING_DOCS=1 sphinx-build
+SPHINXVERBUILD          ?= BUILDING_DOCS=1 sphinx-multiversion
 SOURCEDIR               = docs/source
 BUILDDIR                = docs/build-single
 BUILDDIR_VERSIONS       = docs/build

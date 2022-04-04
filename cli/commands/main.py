@@ -1,4 +1,4 @@
-import click
+from ..clickmod import click
 
 @click.group(name='main')
 def main_group():
