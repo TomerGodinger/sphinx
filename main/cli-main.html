@@ -166,6 +166,7 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-tree">
   <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="demo.html">Auto-Documentation Demo</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="cli.html">Lunch CLI</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">main</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cli-starter.html">starter</a></li>
@@ -277,6 +278,29 @@ a pasta and also order meat via the <a class="reference external" href="#main-or
 </div></blockquote>
 </dd></dl>
 </section>
+<section id="main-order-pizza">
+<h2>order-pizza<a class="headerlink" href="#main-order-pizza" title="Permalink to this headline">#</a></h2>
+<p>Orders tray of hot pizza.</p>
+<p>You can choose which topping to use with the <a class="reference internal" href="#cmdoption-main-order-pizza-topping"><code class="xref std std-option docutils literal notranslate"><span class="pre">-topping</span></code></a> option.
+We recommend the olives in particular; they go great on a pizza.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>main order-pizza <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-main-order-pizza-topping">
+<span class="sig-name descname"><span class="pre">-topping</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;name&gt;</span></span><a class="headerlink" href="#cmdoption-main-order-pizza-topping" title="Permalink to this definition">#</a></dt>
+<dd><p>What to put on the pizza</p>
+</dd></dl>
+<p class="rubric">Environment variables</p>
+<span class="target" id="main-order-pizza-topping-topping"></span><dl class="std envvar">
+<dt class="sig sig-object std">
+<span class="sig-name descname"><span class="pre">TOPPING</span></span></dt>
+<dd><blockquote>
+<div><p>Provide a default for <a class="reference internal" href="#cmdoption-main-order-pizza-topping"><code class="xref std std-option docutils literal notranslate"><span class="pre">-topping</span></code></a></p>
+</div></blockquote>
+</dd></dl>
+</section>
 </section>
 
         </article>
@@ -339,6 +363,7 @@ a pasta and also order meat via the <a class="reference external" href="#main-or
 <li><a class="reference internal" href="#">main</a><ul>
 <li><a class="reference internal" href="#main-order-meat">order-meat</a></li>
 <li><a class="reference internal" href="#main-order-pastas">order-pastas</a></li>
+<li><a class="reference internal" href="#main-order-pizza">order-pizza</a></li>
 </ul>
 </li>
 </ul>
