@@ -1,13 +1,28 @@
-lucli
+LuCLI
 =====
 
-Sub-Groups
-----------
+.. autosimple:: lucli::cli
+
+.. click:: lucli:cli
+   :prog: lucli
+   :nested: short
+   :hide-header:
+
+.. raw:: html
+
+   <hr>
+
+
+.. rubric:: Sub-Commands
 
 .. toctree::
 
    cli-main
    cli-starter
+
+.. raw:: html
+
+   <hr>
 
 
 .. * :ref:`main <main-commands>`
@@ -32,14 +47,9 @@ Sub-Groups
 ..    :prog: lucli
 ..    :nested: short
 
-Commands
---------
 
 .. click:: lucli:cli
    :prog: lucli
-   :nested: short
-
-
-Reference to :ref:`Meat <main-order-meat>`.
-
-.. object:: :ref:`Main <main-order-meat>`.
+   :nested: complete
+   :commands: call-waiter
+   :hide-header:

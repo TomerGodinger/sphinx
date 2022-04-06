@@ -1,6 +1,4 @@
-from ..clickmod import click, clickmod_settings
-
-clickmod_settings.html_prefix = 'cli-'
+from ..clickmod import click
 
 @click.group(name='starter')
 def starter_group():
@@ -19,16 +17,16 @@ def order_bread(auto_confirm: str):
 #Soup goes great with `meat <cli-main.html#main-order-meat>`_, you know (just be sure to specify a good :option:`dish <main order-meat -dish>`).
 @starter_group.command(name='order-soup',
                        short_help='Order some hot, hot soup.')
-@click.option('--sassiness-level', type=int, help='How rude you wish to be. Can be dangerous.')
+@click.option('--sassiness-level', '-s', type=int, help='How rude you wish to be. Can be dangerous.')
 def order_soup(sassiness_level: int):
     """
     Orders a serving of soup. Be polite or you might get banned.
     
-    Soup goes great with :cmd:`meat <main order-meat>`, you know (just be sure to specify a good :option:`dish <main order-meat -dish>`).
+    Soup goes great with :ref:`meat <main-order-meat>`, you know (just be sure to specify a good :option:`dish <main order-meat -dish>`).
 
-    Not so sure about :cmd:`pastas <main order-pastas>` though.
+    Not so sure about :ref:`pastas <main-order-pastas>` though.
 
-    Well, just go look at the :grp:`main` group in general.
+    Well, just go look at the :ref:`main <main>` group in general.
     """
     if sassiness_level > 5:
         click.echo('Soup Chef: "No soup for you! Come back, one year!"')
@@ -46,5 +44,8 @@ def order_salad():
 
     In other words, you don't get to pick anything here.
     Take it or leave it.
+
+    Hey, we can use easy references now!
+    Like `main` and `starter order-soup --sassiness-level` and `main order-meat dish`!
     """
     click.echo('Waiter: You get a bowl full of lettuce. This was chosen randomly and fairly. If you keep trying over and over again, you may get something else. Someday.')

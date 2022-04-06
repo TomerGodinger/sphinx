@@ -16,9 +16,9 @@ GHPAGESBUILD            = html/
 all: Makefile
 	make clean
 	make html
-	make xml
-	make rst
-	make versioned
+#	make xml
+#	make rst
+#	make versioned
 #	make markdown
 
 ghpages:

@@ -9,7 +9,7 @@ from .commands import main
 def cli(version: bool):
     """Your standard, everyday lunch CLI."""
     if version:
-        click.echo("CLI version: 1.33.7")
+        click.echo("Fake LuCLI version: 1.33.7. This will match the documentation version in the real product.")
 
 @click.command(name='call-waiter',
                short_help="Summons a waiter from the depths of Hell's kitchen.")

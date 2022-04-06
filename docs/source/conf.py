@@ -40,7 +40,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
-    'sphinx_click2',
+    'sphinx_click',
     'sphinx_autodoc_typehints',
     'sphinxcontrib.restbuilder',
     'sphinx_multiversion',
