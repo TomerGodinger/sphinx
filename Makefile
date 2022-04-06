@@ -18,7 +18,7 @@ all: Makefile
 	make html
 #	make xml
 #	make rst
-#	make versioned
+	make versioned
 #	make markdown
 
 ghpages:
