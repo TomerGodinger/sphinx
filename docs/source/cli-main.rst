@@ -14,3 +14,9 @@
 .. :envvar:`main-order-meat-dish-DISH`
 
 .. Named environment variable reference (has to be named to work): :ref:`foo <main-order-meat-dish-DISH>`
+
+Reference to :ref:`DISH <main-order-meat-dish-DISH>`
+
+Reference to :ref:`Meat <main-order-meat>`
+
+.. Reference to :option:`Meat <main-order-meat>`

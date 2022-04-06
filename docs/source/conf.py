@@ -13,6 +13,7 @@
 import pathlib
 import sys
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
+sys.path.insert(0, r'/home/tomer/git/sphinx-click/')
 
 
 # -- Project information -----------------------------------------------------
@@ -39,7 +40,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
-    'sphinx_click',
+    'sphinx_click2',
     'sphinx_autodoc_typehints',
     'sphinxcontrib.restbuilder',
     'sphinx_multiversion',

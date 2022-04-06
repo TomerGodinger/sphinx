@@ -37,9 +37,9 @@ def order_soup(sassiness_level: int):
 
 @starter_group.command(name='order-salad',
                        short_help='Orders an intentionally unsorted array of vegetables.')
-def order_soup():
+def order_salad():
     """
-    Orders an mix of vegetables.
+    Orders a mix of vegetables.
 
     Their order is random since it's a salad.
     Therefore we've decided that the vegetables themselves shall be random too.

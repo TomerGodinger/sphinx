@@ -16,8 +16,9 @@ clickmod_settings = ClickModSettings()
 DOC_TEMPLATES = {
     "opt": ":option:`{name} <{prelast} -{last}>`",
     "env": ":ref:`{name} <{fullpath}>`",
-    "cmd": "`{name} <{html_prefix}{first}.html#{fullpath}>`_",
-    "grp": "`{name} <{html_prefix}{first}.html>`_",
+    "cmd": ":ref:`{name} <{fullpath}>`",
+    "grp": ":ref:`{name} <{fullpath}>`",
+    "ref": ":ref:`{name} <{fullpath}>`",
 }
 # Replacements we make when running the CLI
 CLI_TEMPLATES = {reftype: "{name}" for reftype in DOC_TEMPLATES}
@@ -113,7 +114,7 @@ def transform_docstring(doc):
             # to it
             prelast = '-'.join(parts[:-1])
             last = parts[-1]
-            fullpath = f"{prelast}-{last}"
+            fullpath = '-'.join(parts)
 
             # The first element is the group that the reference belongs to
             first = parts[0]

@@ -1,26 +1,18 @@
-starter
-=======
+.. .. click:: cli.commands.starter:starter_group
+..    :prog: starter
+..    :nested: short
 
-.. autosimple:: cli.commands.starter::starter_group
+.. .. raw:: html
 
-.. raw:: html
+..    <hr>
 
-   <hr>
+.. .. rubric:: Details
 
-Summary
--------
-
-.. click:: cli.commands.starter:starter_group
-   :prog: starter
-   :nested: short
-
-.. raw:: html
-
-   <hr>
-
-Details
--------
+.. .. click:: cli.commands.starter:starter_group
+..    :prog: starter
+..    :nested: full
+..    :hide-header:
 
 .. click:: cli.commands.starter:starter_group
    :prog: starter
-   :nested: full
+   :nested: complete
