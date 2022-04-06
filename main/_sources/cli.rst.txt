@@ -13,17 +13,23 @@ Lunch CLI
    <hr>
 
 
-.. rubric:: Sub-Commands
+.. rubric:: Command Index
 
 .. toctree::
 
    cli-main
+
+|
+
+.. toctree::
+
    cli-starter
+
+* :ref:`call-waiter <lucli-call-waiter>`
 
 .. raw:: html
 
    <hr>
-
 
 .. * :ref:`main <main-commands>`
 .. * :ref:`starter <starter-commands>`
