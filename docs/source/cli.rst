@@ -1,5 +1,5 @@
-LuCLI
-=====
+Lunch CLI
+=========
 
 .. autosimple:: lucli::cli
 
