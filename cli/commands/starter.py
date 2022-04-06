@@ -2,7 +2,7 @@ from ..clickmod import click
 
 @click.group(name='starter')
 def starter_group():
-    """Order a side dish."""
+    """Order a starter dish."""
     pass
 
 
