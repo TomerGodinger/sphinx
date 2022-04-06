@@ -150,10 +150,10 @@
 
 <select id="versionselect" onchange="window.open(this.value,'_self');" style="width: 100%; padding: 5px;">
   
-    <option value="../v0.1/cli.html">v0.1</option>
+    <option value="../ver0.1/cli.html">ver0.1</option>
   
   
-    <option value="../v0.2/cli.html">v0.2</option>
+    <option value="../ver0.2/cli.html">ver0.2</option>
   
   
     <option value="cli.html" selected="selected">main</option>
@@ -208,19 +208,19 @@
         <article role="main">
           <section id="lunch-cli">
 <h1>Lunch CLI<a class="headerlink" href="#lunch-cli" title="Permalink to this headline">#</a></h1>
-<section id="lucli">
-<h2>lucli<a class="headerlink" href="#lucli" title="Permalink to this headline">#</a></h2>
 <p>Your standard, everyday lunch CLI.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>lucli <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
-</pre></div>
-</div>
-<p class="rubric">Options</p>
-<dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-lucli-version">
-<span class="sig-name descname"><span class="pre">--version</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-lucli-version" title="Permalink to this definition">#</a></dt>
+<p><p class="rubric">Options</p>
+<span class="target" id="lucli-version"></span><dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-version">
+<span class="sig-name descname"><span class="pre">--version</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-version" title="Permalink to this definition">#</a></dt>
 <dd><p>Display CLI version.</p>
 </dd></dl>
 <p class="rubric">Commands</p>
+<dl class="object">
+<dt class="sig sig-object">
+<span class="sig-name descname"><span class="pre">call-waiter</span></span></dt>
+<dd><p>Summons a waiter from the depths of Hell’s kitchen.</p>
+</dd></dl>
 <dl class="object">
 <dt class="sig sig-object">
 <span class="sig-name descname"><span class="pre">main</span></span></dt>
@@ -231,7 +231,8 @@
 <span class="sig-name descname"><span class="pre">starter</span></span></dt>
 <dd><p>Order a side dish.</p>
 </dd></dl>
-</section>
+</p>
+<hr/><p class="rubric">Sub-Commands</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cli-main.html">main</a><ul>
@@ -241,23 +242,32 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cli-starter.html">starter</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cli-starter.html#summary">Summary</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="cli-starter.html#starter">starter</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="cli-starter.html#details">Details</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="cli-starter.html#starter">starter</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="cli-starter.html#starter-order-bread">order-bread</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cli-starter.html#starter-order-salad">order-salad</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cli-starter.html#starter-order-soup">order-soup</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="cli-starter.html#starter-order-bread">order-bread</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cli-starter.html#starter-order-salad">order-salad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cli-starter.html#starter-order-soup">order-soup</a></li>
 </ul>
 </li>
 </ul>
 </div>
+<hr/><section id="lucli-call-waiter">
+<h2>call-waiter<a class="headerlink" href="#lucli-call-waiter" title="Permalink to this headline">#</a></h2>
+<p>Calls forth a (hopefully) friendly waiter.</p>
+<p>Be sure to leave a nice tip when you leave if you enjoy their service!</p>
+<div class="highlight-shell notranslate" id="lucli-call-waiter"><div class="highlight"><pre><span></span>lucli call-waiter <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<span class="target" id="lucli-call-waiter-urgency"></span><dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-lucli-call-waiter-urgency">
+<span class="sig-name descname"><span class="pre">--urgency</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;LEVEL&gt;</span></span><a class="headerlink" href="#cmdoption-lucli-call-waiter-urgency" title="Permalink to this definition">#</a></dt>
+<dd><p>How urgently you need the waiter to come over</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>0</p>
+</dd>
+</dl>
+</dd></dl>
+</section>
 </section>
 
         </article>
@@ -318,7 +328,7 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Lunch CLI</a><ul>
-<li><a class="reference internal" href="#lucli">lucli</a></li>
+<li><a class="reference internal" href="#lucli-call-waiter">call-waiter</a></li>
 </ul>
 </li>
 </ul>

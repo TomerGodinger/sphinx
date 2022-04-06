@@ -150,10 +150,10 @@
 
 <select id="versionselect" onchange="window.open(this.value,'_self');" style="width: 100%; padding: 5px;">
   
-    <option value="../v0.1/index.html">v0.1</option>
+    <option value="../ver0.1/index.html">ver0.1</option>
   
   
-    <option value="../v0.2/index.html">v0.2</option>
+    <option value="../ver0.2/index.html">ver0.2</option>
   
   
     <option value="demo.html" selected="selected">main</option>
@@ -211,7 +211,7 @@
 <p>The purpose of this mock website is to demonstrate some options for
 automatically generated documentation for a Python (Click-based) CLI tool.</p>
 <p>This is in no way final in its form nor function, but it showcases most of the
-main features we’re experimenting with. In particular this includes:</p>
+main features I’m experimenting with. In particular this includes:</p>
 <ol class="arabic">
 <li><p><strong>Versioned pages</strong>: At the top-left you should see the current version of
 the CLI, along with the option to select a version. This is so you can tell
@@ -226,29 +226,28 @@ find if you switch to previous versions.</p>
 </li>
 <li><p><strong>Separation into command groups</strong>: The documentation for each group has
 been placed on its own page. This should make it easier to focus on specific
-parts.</p></li>
-<li><p><strong>Levels of detail</strong>: In the <a class="reference internal" href="cli-starter.html"><span class="doc">starter</span></a> page you will find that it
+parts.</p>
+<p>In particular, the <a class="reference internal" href="cli.html"><span class="doc">Lunch CLI</span></a> page represents a command group that has both
+sub-groups as well as commands and options on its own. I’d like to know if the way
+I’ve presented it is clear or if there are any modifications you think would make it
+better.</p>
+</li>
+<li><p><strong>Levels of detail</strong>: In the <a class="reference internal" href="cli-starter.html"><span class="doc">starter</span></a> page you will find that the document
 is divided into three sections:</p>
 <ul class="simple">
-<li><p>Title (“starter”): Shows the group name and the short description of what it does.</p></li>
-<li><p>Summary: Shows the Title section along with a summary of the commands with all of
-their short-form help.</p></li>
-<li><p>Details: Shows the Title section along with a full description of all the commands
-along with their parameters and everything.</p></li>
+<li><p><em>Title (“starter”)</em>: Shows the group name and the short description of what it does.</p></li>
+<li><p><em>Summary</em>: Shows the a summary of the commands with all of their short-form help.</p></li>
+<li><p><em>Details</em>: Shows the full description of all the commands along with their parameters
+and everything.</p></li>
 </ul>
-<p>There is obviously some redundancy here, which stems from how the generation
-program is implemented. It does let you see a high-level overview of the
-commands though, which may be nice. It might be possible to change it so
-that the Title section isn’t included in each of the other sections, but
-doing so seems problematic at the time so we have not done it for now.</p>
-<p>Conversely, in the <a class="reference internal" href="cli-main.html"><span class="doc">main</span></a> page there is only the Details section.
-The aforementioned redundancy is not present there, but there is also no
-short display of the available commands.</p>
+<p>Conversely, in the <a class="reference internal" href="cli-main.html"><span class="doc">main</span></a> page there is no short summary of the commands.
+I’d like to know if adding this short summary is desirable or not. It may be possible
+to change the formatting somewhat, add separators like the ones in <a class="reference internal" href="cli.html"><span class="doc">Lunch CLI</span></a>, if it
+makes it look better.</p>
 </li>
 <li><p><strong>Cross-referencing</strong>: Various parts contain links to various other parts.
-This is actually a rather problematic feature and may very well not be
-included in the final product unless it’s important enough or we find some
-workaround for the problems it entails.</p></li>
+I’ve added the ability to link to pretty much anything, but if there’s something in
+particular you think could be added here, please let me know.</p></li>
 </ol>
 <p>Please provide any feedback you have – now is the best time to decide how we
 want this documentation to be!</p>

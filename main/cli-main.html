@@ -150,10 +150,10 @@
 
 <select id="versionselect" onchange="window.open(this.value,'_self');" style="width: 100%; padding: 5px;">
   
-    <option value="../v0.1/cli-main.html">v0.1</option>
+    <option value="../ver0.1/cli-main.html">ver0.1</option>
   
   
-    <option value="../v0.2/cli-main.html">v0.2</option>
+    <option value="../ver0.2/cli-main.html">ver0.2</option>
   
   
     <option value="cli-main.html" selected="selected">main</option>
@@ -209,17 +209,17 @@
           <section id="main">
 <h1>main<a class="headerlink" href="#main" title="Permalink to this headline">#</a></h1>
 <p>Order a main dish.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>main <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+<div class="highlight-shell notranslate" id="main"><div class="highlight"><pre><span></span>main <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
 </pre></div>
 </div>
 <section id="main-order-meat">
 <h2>order-meat<a class="headerlink" href="#main-order-meat" title="Permalink to this headline">#</a></h2>
 <p>Orders a meat dish.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>main order-meat <span class="o">[</span>OPTIONS<span class="o">]</span>
+<div class="highlight-shell notranslate" id="main-order-meat"><div class="highlight"><pre><span></span>main order-meat <span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
 </div>
 <p class="rubric">Options</p>
-<dl class="std option">
+<span class="target" id="main-order-meat-dish"></span><dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-main-order-meat-dish">
 <span class="sig-name descname"><span class="pre">-dish</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;name&gt;</span></span><a class="headerlink" href="#cmdoption-main-order-meat-dish" title="Permalink to this definition">#</a></dt>
 <dd><p>The meat dish to order</p>
@@ -242,14 +242,14 @@
 <h2>order-pastas<a class="headerlink" href="#main-order-pastas" title="Permalink to this headline">#</a></h2>
 <p>Orders a bunch of pasta dishes.</p>
 <p>Note that it is possible - and even recommended - to order
-a pasta and also order meat via the <a class="reference external" href="#main-order-meat">meat</a> command.</p>
+a pasta and also order meat via the <a class="reference internal" href="#main-order-meat"><span class="std std-ref">meat</span></a> command.</p>
 <p>The <a class="reference internal" href="#cmdoption-main-order-pastas-dish"><code class="xref std std-option docutils literal notranslate"><span class="pre">order-pastas</span> <span class="pre">-dish</span></code></a> argument for this command is similar to the
 <a class="reference internal" href="#cmdoption-main-order-meat-dish"><code class="xref std std-option docutils literal notranslate"><span class="pre">meat</span> <span class="pre">-dish</span></code></a> argument in the one above.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>main order-pastas <span class="o">[</span>OPTIONS<span class="o">]</span>
+<div class="highlight-shell notranslate" id="main-order-pastas"><div class="highlight"><pre><span></span>main order-pastas <span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
 </div>
 <p class="rubric">Options</p>
-<dl class="std option">
+<span class="target" id="main-order-pastas-dish"></span><dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-main-order-pastas-dish">
 <span class="sig-name descname"><span class="pre">-dish</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;name&gt;</span></span><a class="headerlink" href="#cmdoption-main-order-pastas-dish" title="Permalink to this definition">#</a></dt>
 <dd><p>The type of pastas to order</p>
@@ -259,7 +259,7 @@ a pasta and also order meat via the <a class="reference external" href="#main-or
 </dd>
 </dl>
 </dd></dl>
-<dl class="std option">
+<span class="target" id="main-order-pastas-quantity"></span><dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-main-order-pastas-quantity">
 <span class="sig-name descname"><span class="pre">-quantity</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;quantity&gt;</span></span><a class="headerlink" href="#cmdoption-main-order-pastas-quantity" title="Permalink to this definition">#</a></dt>
 <dd><p>The amount of pasta dishes to order</p>
@@ -280,17 +280,28 @@ a pasta and also order meat via the <a class="reference external" href="#main-or
 </section>
 <section id="main-order-pizza">
 <h2>order-pizza<a class="headerlink" href="#main-order-pizza" title="Permalink to this headline">#</a></h2>
-<p>Orders tray of hot pizza.</p>
+<p>Orders tray of hot pizza of the specified <a class="reference internal" href="#main-order-pizza-size"><span class="std std-ref">SIZE</span></a> and (optionally) <a class="reference internal" href="#main-order-pizza-shape"><span class="std std-ref">SHAPE</span></a>.</p>
 <p>You can choose which topping to use with the <a class="reference internal" href="#cmdoption-main-order-pizza-topping"><code class="xref std std-option docutils literal notranslate"><span class="pre">-topping</span></code></a> option.
 We recommend the olives in particular; they go great on a pizza.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>main order-pizza <span class="o">[</span>OPTIONS<span class="o">]</span>
+<div class="highlight-shell notranslate" id="main-order-pizza"><div class="highlight"><pre><span></span>main order-pizza <span class="o">[</span>OPTIONS<span class="o">]</span> SIZE <span class="o">[</span>SHAPE<span class="o">]</span>
 </pre></div>
 </div>
 <p class="rubric">Options</p>
-<dl class="std option">
+<span class="target" id="main-order-pizza-topping"></span><dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-main-order-pizza-topping">
 <span class="sig-name descname"><span class="pre">-topping</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;name&gt;</span></span><a class="headerlink" href="#cmdoption-main-order-pizza-topping" title="Permalink to this definition">#</a></dt>
 <dd><p>What to put on the pizza</p>
+</dd></dl>
+<p class="rubric">Arguments</p>
+<span class="target" id="main-order-pizza-size"></span><dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-main-order-pizza-arg-SIZE">
+<span id="cmdoption-main-order-pizza-arg-size"></span><span class="sig-name descname"><span class="pre">SIZE</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-main-order-pizza-arg-SIZE" title="Permalink to this definition">#</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+<span class="target" id="main-order-pizza-shape"></span><dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-main-order-pizza-arg-SHAPE">
+<span id="cmdoption-main-order-pizza-arg-shape"></span><span class="sig-name descname"><span class="pre">SHAPE</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-main-order-pizza-arg-SHAPE" title="Permalink to this definition">#</a></dt>
+<dd><p>Optional argument</p>
 </dd></dl>
 <p class="rubric">Environment variables</p>
 <span class="target" id="main-order-pizza-topping-topping"></span><dl class="std envvar">

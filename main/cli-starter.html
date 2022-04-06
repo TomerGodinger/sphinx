@@ -150,10 +150,10 @@
 
 <select id="versionselect" onchange="window.open(this.value,'_self');" style="width: 100%; padding: 5px;">
   
-    <option value="../v0.1/cli-starter.html">v0.1</option>
+    <option value="../ver0.1/cli-starter.html">ver0.1</option>
   
   
-    <option value="../v0.2/cli-starter.html">v0.2</option>
+    <option value="../ver0.2/cli-starter.html">ver0.2</option>
   
   
     <option value="cli-starter.html" selected="selected">main</option>
@@ -209,12 +209,7 @@
           <section id="starter">
 <h1>starter<a class="headerlink" href="#starter" title="Permalink to this headline">#</a></h1>
 <p>Order a side dish.</p>
-<hr/><section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
-<section id="starter">
-<h3>starter<a class="headerlink" href="#starter" title="Permalink to this headline">#</a></h3>
-<p>Order a side dish.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>starter <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
+<div class="highlight-shell notranslate" id="starter"><div class="highlight"><pre><span></span>starter <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
 </pre></div>
 </div>
 <p class="rubric">Commands</p>
@@ -233,56 +228,47 @@
 <span class="sig-name descname"><span class="pre">order-soup</span></span></dt>
 <dd><p>Order some hot, hot soup.</p>
 </dd></dl>
-</section>
-<hr/></section>
-<section id="details">
-<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">#</a></h2>
-<section id="starter">
-<h3>starter<a class="headerlink" href="#starter" title="Permalink to this headline">#</a></h3>
-<p>Order a side dish.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>starter <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND <span class="o">[</span>ARGS<span class="o">]</span>...
-</pre></div>
-</div>
 <section id="starter-order-bread">
-<h4>order-bread<a class="headerlink" href="#starter-order-bread" title="Permalink to this headline">#</a></h4>
+<h2>order-bread<a class="headerlink" href="#starter-order-bread" title="Permalink to this headline">#</a></h2>
 <p>Orders a bread dish.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>starter order-bread <span class="o">[</span>OPTIONS<span class="o">]</span>
+<div class="highlight-shell notranslate" id="starter-order-bread"><div class="highlight"><pre><span></span>starter order-bread <span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
 </div>
 <p class="rubric">Options</p>
-<dl class="std option">
+<span class="target" id="starter-order-bread-yes"></span><dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-starter-order-bread-yes">
 <span class="sig-name descname"><span class="pre">--yes</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-starter-order-bread-yes" title="Permalink to this definition">#</a></dt>
 <dd><p>No? No, no no. Yes.</p>
 </dd></dl>
 </section>
 <section id="starter-order-salad">
-<h4>order-salad<a class="headerlink" href="#starter-order-salad" title="Permalink to this headline">#</a></h4>
-<p>Orders an mix of vegetables.</p>
+<h2>order-salad<a class="headerlink" href="#starter-order-salad" title="Permalink to this headline">#</a></h2>
+<p>Orders a mix of vegetables.</p>
 <p>Their order is random since it’s a salad.
 Therefore we’ve decided that the vegetables themselves shall be random too.</p>
 <p>In other words, you don’t get to pick anything here.
 Take it or leave it.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>starter order-salad <span class="o">[</span>OPTIONS<span class="o">]</span>
+<p>Hey, we can use easy references now!
+Like <a class="reference internal" href="cli-main.html#main"><span class="std std-ref">main</span></a> and <a class="reference internal" href="#starter-order-soup-sassiness-level"><span class="std std-ref">starter order-soup --sassiness-level</span></a> and <a class="reference internal" href="cli-main.html#main-order-meat-dish"><span class="std std-ref">main order-meat dish</span></a>!</p>
+<div class="highlight-shell notranslate" id="starter-order-salad"><div class="highlight"><pre><span></span>starter order-salad <span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
 </div>
 </section>
 <section id="starter-order-soup">
-<h4>order-soup<a class="headerlink" href="#starter-order-soup" title="Permalink to this headline">#</a></h4>
+<h2>order-soup<a class="headerlink" href="#starter-order-soup" title="Permalink to this headline">#</a></h2>
 <p>Orders a serving of soup. Be polite or you might get banned.</p>
-<p>Soup goes great with <a class="reference external" href="cli-main.html#main-order-meat">meat</a>, you know (just be sure to specify a good <a class="reference internal" href="cli-main.html#cmdoption-main-order-meat-dish"><code class="xref std std-option docutils literal notranslate"><span class="pre">dish</span></code></a>).</p>
-<p>Not so sure about <a class="reference external" href="cli-main.html#main-order-pastas">pastas</a> though.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>starter order-soup <span class="o">[</span>OPTIONS<span class="o">]</span>
+<p>Soup goes great with <a class="reference internal" href="cli-main.html#main-order-meat"><span class="std std-ref">meat</span></a>, you know (just be sure to specify a good <a class="reference internal" href="cli-main.html#cmdoption-main-order-meat-dish"><code class="xref std std-option docutils literal notranslate"><span class="pre">dish</span></code></a>).</p>
+<p>Not so sure about <a class="reference internal" href="cli-main.html#main-order-pastas"><span class="std std-ref">pastas</span></a> though.</p>
+<p>Well, just go look at the <a class="reference internal" href="cli-main.html#main"><span class="std std-ref">main</span></a> group in general.</p>
+<div class="highlight-shell notranslate" id="starter-order-soup"><div class="highlight"><pre><span></span>starter order-soup <span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
 </div>
 <p class="rubric">Options</p>
-<dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-starter-order-soup-sassiness-level">
-<span class="sig-name descname"><span class="pre">--sassiness-level</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;sassiness_level&gt;</span></span><a class="headerlink" href="#cmdoption-starter-order-soup-sassiness-level" title="Permalink to this definition">#</a></dt>
+<span class="target" id="starter-order-soup-sassiness-level"><span id="starter-order-soup-s"></span></span><dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-starter-order-soup-s">
+<span id="cmdoption-starter-order-soup-sassiness-level"></span><span class="sig-name descname"><span class="pre">-s</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--sassiness-level</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;sassiness_level&gt;</span></span><a class="headerlink" href="#cmdoption-starter-order-soup-s" title="Permalink to this definition">#</a></dt>
 <dd><p>How rude you wish to be. Can be dangerous.</p>
 </dd></dl>
-</section>
-</section>
 </section>
 </section>
 
@@ -344,19 +330,9 @@ Take it or leave it.</p>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">starter</a><ul>
-<li><a class="reference internal" href="#summary">Summary</a><ul>
-<li><a class="reference internal" href="#starter">starter</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#details">Details</a><ul>
-<li><a class="reference internal" href="#starter">starter</a><ul>
 <li><a class="reference internal" href="#starter-order-bread">order-bread</a></li>
 <li><a class="reference internal" href="#starter-order-salad">order-salad</a></li>
 <li><a class="reference internal" href="#starter-order-soup">order-soup</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
